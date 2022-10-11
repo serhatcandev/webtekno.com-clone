@@ -97,3 +97,66 @@ h2:hover {
   color: #ff5722;
   cursor: pointer;
 }
+
+@media screen and (max-width: 965px) {
+    .news-section{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .news-section{
+        width: 95vw;
+        margin: auto;
+    }
+    
+    .yayin-akisi{
+        text-align: center;
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    .news-icon{
+        display: none;
+    }
+
+    .news{
+        flex-direction: column;
+    }
+
+    .news-right{
+        flex-direction: column;
+    }
+
+    .news-img{
+        width: 100%;
+    }
+
+    .news-left {
+        display: none;
+    }
+    
+
+    .news::after{
+        background-color: #EEE;
+        height: 1px;
+        content: '';
+        display: block;
+        width: calc(100% + 2rem);
+        margin: 1rem -1rem 0;
+    }
+
+    .news-content h2{
+        font-weight: 400;
+    }
+
+    .news-content span{
+        display: block;
+    }
+
+    .news-meta{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
